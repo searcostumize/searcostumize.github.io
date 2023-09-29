@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="styles.css">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... other head elements ... -->
+    <style>
+        .blink {
+            animation: blink-animation 1s steps(5, start) infinite;
+        }
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+
+        body {
+            animation: disco-animation 0.5s infinite;
+        }
+        @keyframes disco-animation {
+            0% { background-color: red; }
+            25% { background-color: yellow; }
+            50% { background-color: blue; }
+            75% { background-color: green; }
+            100% { background-color: red; }
+        }
+    </style>
+</head>
+<body>
+    <!-- ... your existing content ... -->
+    <h1 class="blink">Blinking Text!</h1>
+    <!-- ... more content ... -->
+</body>
+</html>
+
 </head>
 <body>   
         <h1 style="color:blueviolet">Welcome to my homepage</h1>
